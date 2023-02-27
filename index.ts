@@ -1,3 +1,4 @@
 type MyType = string|number;
+type HyperType = string|number|boolean|[]|{};
 
-let 가뚜 :MyType[] = [1,3, '323', 4,5,2,2,4,5,5,2,3];
+let Practice :HyperType[] = [1,323,'4242',true,false,{}];
