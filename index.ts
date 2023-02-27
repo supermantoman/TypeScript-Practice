@@ -33,15 +33,46 @@ let Obj :{a:number|string|boolean} = {
   a:123
 }; // 객체의 속성값에 여러가지 타입 값이 올 수 있도록 하고 싶을 때
 
-let Most:unknown;
+let Most:any; //any는 모든 타입 무력화 = 자바스크립트처럼 만들어버림.
 Most = 123;
 Most = '123';
 Most = 123;
 
 let agee:unknown = 1;
-agee + 1
+agee + 1 // unknown타입 연습
 
 let user:string = 'kim';
 let age:undefined|number= undefined;
 let married:boolean = false; 
 let 철수:(string|undefined|boolean)[] = [user, age, married];
+
+
+type SchoolType = {
+  score : number[]|boolean,
+  teacher : string,
+  friend: string|string[],
+}
+
+let 학교 :SchoolType = {
+  score : [100, 97, 84],
+  teacher : 'Phil',
+  friend : 'John'
+}
+
+학교.score[4] = false;
+학교.friend = ['Lee' , 학교.teacher]
+
+function canMarry (income:number, home:boolean, attraction:string):string|void {
+}
+
+canMarry(700, false, '중');
+canMarry(700, true, '상');
+
+//Type Narrowing
+function MyFnc(x : string|number) {
+	if(typeof (x) === 'string'){
+			return x + '1';
+		} else {
+			return x + 1;
+	}
+}
