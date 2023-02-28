@@ -76,3 +76,27 @@ function MyFnc(x : string|number) {
 			return x + 1;
 	}
 }
+
+// console.log(MyFnc(15));
+
+const cleanUp = (x: string[]|number[]) => {
+  
+}
+
+
+cleanUp(['1',2,'3']);
+
+// Type Alias
+type AnimalType = { name: string , age: number }
+let Animals:AnimalType = { name : 'James', age: 13 }
+;
+
+//&연산자 타입합치기
+type PositionX = { x : number };
+type PositionY = { y : number };
+
+type NewType = PositionX & PositionY
+// {x : number, y: number }
+
+let position: NewType = { x: 10, y: '10'}
+let position: NewType = { x: 10, y: 10}

@@ -49,3 +49,7 @@ function MyFnc(x) {
         return x + 1;
     }
 }
+// console.log(MyFnc(15));
+const cleanUp = (x) => {
+};
+cleanUp(['1', 2, '3']);
