@@ -174,11 +174,21 @@ function RPC(x:('가위'|'바위'|'보')) :('가위'|'바위'|'보')[]{
 /* -------------------------------------------------------------------------- */
 
 // as const
-let 자료 = { name : 'kim'} as const;
+let 자료  = { name : 'kim' as 'kim'} 
+function 내함수(a:'kim') {
 
-
-function 내함수(a:'kim'){
-
-}
+} 
 
 내함수(자료.name)
+
+/* -------------------------------------------------------------------------- */
+
+// 객체 안 메소드의 type Alias 지정
+
+type plusOneType = (a:number) => number; 
+
+let members = {
+  name : 'kim',
+  plusOne:plusOneType : (a) =>{return a+1}
+  changeName : () => {}
+}

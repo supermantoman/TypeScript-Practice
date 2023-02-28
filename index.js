@@ -85,3 +85,11 @@ let 자료 = { name: 'kim' };
 function 내함수(a) {
 }
 내함수(자료.name);
+let members = {
+    name: 'kim',
+    plusOne: plusOneType
+}(a);
+{
+    return a + 1;
+}
+changeName: () => { };
