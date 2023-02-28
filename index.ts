@@ -95,8 +95,15 @@ let Animals:AnimalType = { name : 'James', age: 13 }
 type PositionX = { x : number };
 type PositionY = { y : number };
 
-type NewType = PositionX & PositionY
-// {x : number, y: number }
+type NewType = PositionX & PositionY // {x : number, y: number }
 
 let position: NewType = { x: 10, y: '10'}
 let position: NewType = { x: 10, y: 10}
+
+// type 합치기
+type Name = string;
+type Age = number;
+type Person = Name | Age;
+let Hi:Person = false;
+let Si:Person = 'hi';
+let Ki:Person = 15;
