@@ -53,3 +53,17 @@ function MyFnc(x) {
 const cleanUp = (x) => {
 };
 cleanUp(['1', 2, '3']);
+let Animals = { name: 'James', age: 13 };
+let position = { x: 10, y: '10' };
+let position2 = { x: 10, y: 10 };
+let Hi = false;
+let Si = 'hi';
+let Ki = 15;
+let futur = { name: 'game', age: 15, blah: 15 };
+console.log(futur);
+/* -------------------------------------------------------------------------- */
+// 1. 이 타입은 object 자료형이어야합니다.
+// 2. 이 타입은 color 라는 속성을 가질 수도 있으며 항상 문자가 들어와야합니다. 
+// 3. 이 타입은 size 라는 속성이 있어야하며 항상 숫자가 들어와야합니다.
+// 4. 이 타입은 position 이라는 변경불가능한 속성이 있어야하며 항상 숫자가 담긴 array 자료가 들어와야합니다.  
+// type alias로 만들어보셈 
