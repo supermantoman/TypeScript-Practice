@@ -61,9 +61,18 @@ let Si = 'hi';
 let Ki = 15;
 let futur = { name: 'game', age: 15, blah: 15 };
 console.log(futur);
+let test = {
+    size: 1,
+    position: [12, 3, 4]
+};
+test.position = [4, 3, 1]; // error but 값은 들어감
+console.log(test.position);
+// { name : 'kim', phone : 123, email : 'abc@naver.com' }
 /* -------------------------------------------------------------------------- */
-// 1. 이 타입은 object 자료형이어야합니다.
-// 2. 이 타입은 color 라는 속성을 가질 수도 있으며 항상 문자가 들어와야합니다. 
-// 3. 이 타입은 size 라는 속성이 있어야하며 항상 숫자가 들어와야합니다.
-// 4. 이 타입은 position 이라는 변경불가능한 속성이 있어야하며 항상 숫자가 담긴 array 자료가 들어와야합니다.  
-// type alias로 만들어보셈 
+// literal Type
+// 리턴값도 호출값도 정해줄수있다.
+function 함수(a) {
+    return 1;
+}
+함수('bye');
+함수('hello');
