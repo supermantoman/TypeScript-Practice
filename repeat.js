@@ -47,3 +47,46 @@ function MyFnc(x) {
     }
 }
 console.log(MyFnc(true));
+/* -------------------------------------------------------------------------- */
+let obj = {
+    name: 'kim',
+    age: 13,
+    isHome: true,
+};
+// function Test(a:string|number|boolean) {
+//   if( 'isHome' in obj ) {
+//     console.log('쩌노');  
+//   } else if ('home' in obj) {
+//     console.log('큉');
+//   }
+// }
+// Test();
+/* -------------------------------------------------------------------------- */
+function Hii(a) {
+    let array = [];
+    array[0] = a;
+}
+let n = 'kim';
+Hii(123);
+/* -------------------------------------------------------------------------- */
+let x = "hello";
+if (typeof x === "string") {
+    console.log(x.toUpperCase());
+}
+else {
+    console.log(x.toFixed(2));
+}
+let cutZero = function (x) {
+    let result = x.replace(/^0+/, "");
+    return result;
+};
+function removeDash(x) {
+    let result = x.replace(/-/g, "");
+    return parseFloat(result);
+}
+function sumFunction(a, b, c) {
+    let results = b(a);
+    let results2 = c(results);
+    console.log(results2);
+}
+sumFunction('010-1111-2222', cutZero, removeDash);
